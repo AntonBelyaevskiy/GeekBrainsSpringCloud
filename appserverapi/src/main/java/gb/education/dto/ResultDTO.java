@@ -1,7 +1,9 @@
 package gb.education.dto;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.UUID;
 
+@XmlRootElement
 public class ResultDTO {
 
     private String ping;

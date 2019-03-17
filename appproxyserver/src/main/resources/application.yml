@@ -1,3 +1,16 @@
 spring:
   application:
-    name:
+    name: app-proxy-server
+
+server:
+  port: 7777
+
+zuul:
+  routes:
+    date:
+      path: /calendar/**
+      serviceId: app-server-api
+
+ribbon:
+  eureka:
+    enabled: true
